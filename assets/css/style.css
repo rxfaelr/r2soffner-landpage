@@ -302,7 +302,7 @@ section {
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
-  color: red;
+  color: #F98C3E;
 }
 /*.btn-text {
   
@@ -367,29 +367,47 @@ section {
 
 
 /*equipe*/
+.team {
+  padding: 10px 20px;
+  border-style: ridge;
+  border-radius: 20px;
+  display: block;
+}
+
+.profile{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(130%, -50%);
+  height: 300px;
+  width: 300px;
+}
+
 .about .content {
   background-color: #f6f9ff;
   padding: 40px;
 }
 
 .about h3 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
-  color: #4154f1;
+  color: #F98C3E;
   text-transform: uppercase;
 }
 
 .about h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #012970;
+  color: black;
 }
 
 .about p {
   margin: 15px 0 30px 0;
   line-height: 24px;
 }
-
+.img-fluid-team {
+  width: 300px;
+}
 .about .btn-read-more {
   line-height: 0;
   padding: 15px 40px;
@@ -427,12 +445,12 @@ section {
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #012970;
+  color: black;
 }
 
 .footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #012970;
+  color: black;
 }
