@@ -443,6 +443,26 @@ section {
   font-size: 14px;
 }
 
+#footer-navbar{
+ padding-right: 90px;
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ font-weight: 100;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-navbar a:hover,
+#footer-navbar .active,
+#footer-navbar .active:focus,
+#footer-navbar li:hover>a {
+  color: black;
+}
+
+.img-footer{
+  padding: 0px 0px 10px 30px
+}
+
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
