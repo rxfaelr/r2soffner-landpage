@@ -43,17 +43,74 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Blog</a></li>
-          <li><a class="nav-link scrollto" href="#services">Contato</a></li>
+          <li><a class="nav-link scrollto" href="#services"  data-bs-toggle="modal" data-bs-target="#modal-mensagem">Contato</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Equipe</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </header>
-
   <!-- conteudo -->
-  <section id="content" class="content d-flex align-items-center">
 
+  <!--====== MODAL DE CONTATO====== -->
+  <div class="modal fade" id="modal-mensagem">
+    <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                 <h4 class="modal-title">Título da mensagem</h4>
+             </div>
+             <div class="modal-body">
+              <form id="contactForm" action="http://r2soffner.com.br/src/services/sendEmail.php" method="POST" name="contactForm">
+
+                <div class="d-flex align-items-start flex-column ma-1">
+                  <label for="message-text" class="col-form-label">Seu nome *</label>
+                  <div class="input-group container-input">
+                    <span class="input-group-text container-icon"> <span class="material-symbols-outlined icon">person</span></span>
+                    <input type="text" name="userName" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+      
+                <div class="d-flex align-items-start flex-column ma-1">
+                  <label for="message-text" class="col-form-label">Seu e-mail *</label>
+                  <div class="input-group container-input">
+                    <span class="input-group-text container-icon"><span class="material-symbols-outlined">alternate_email</span></span>
+                    <input type="text" name="userEmail" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+      
+                <div class="d-flex align-items-start flex-column ma-1">
+                  <label for="message-text" class="col-form-label">Assunto *</label>
+                  <div class="input-group container-input">
+                    <span class="input-group-text container-icon"> <span class="material-symbols-outlined icon">book</span></span>
+                    <input type="text" name="subject" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+      
+                <div class="d-flex align-items-start flex-column ma-1">
+                  <label for="message-text" class="col-form-label">Informe a sua necessidade *</label>
+                  <div class="input-group container-input">
+                    <span class="input-group-text container-icon"><span class="material-symbols-outlined">question_mark</span></span>
+                    <textarea class="form-control" name="textEmail" aria-label="With textarea"></textarea>
+                  </div>
+                </div>
+              
+                <div class="modal-footer mt-5">
+                  <button type="button" class="btn btn-secondary button-close" data-bs-dismiss="modal">Fechar</button>
+                  <button type="submit" name="SendEmailAction" class="btn btn-primary button-confirm" id="liveAlertBtn">Enviar</button>
+                </div>
+              </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+  <!-- ======== FIM DO MODAL ======== -->
+
+  <section id="content" class="content d-flex align-items-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">

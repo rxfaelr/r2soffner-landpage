@@ -118,6 +118,7 @@
   window.addEventListener('load', () => {
     aos_init();
   });
-
-
+  $("#btn-mensagem").click(function(){
+    $("#modal-mensagem").modal();
+});
 })();
