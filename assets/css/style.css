@@ -356,9 +356,9 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(130%, -50%);
-  height: 300px;
-  width: 300px;
+  transform: translate(90%, -50%);
+  height: 500px;
+  width: 350px;
 }
 
 .about .content {
